@@ -1,0 +1,158 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: ARCUAS Partners API
+  termsOfService: https://example.com/terms/
+  contact:
+    email: contact@example.com
+    url: http://example.com/contact
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  x-logo:
+    url: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAAyCAYAAABiWZRoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAsuSURBVHgB7VlpcFbVGX7Ovfdb8iWQADEZAUHLpgwgCqKjgOKwhAQC4gBahIJjZVLUMlZFxSQ3CUaBqXa0SnEpShUqCkaWsNSqKFjGUqCjWIwICLI0GBJM8u33nj43JCGEbAZif3iemZN7v7Pdc979fQMoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj8TCDQxnhqvewQ0XFn1ljxYlPzIlIODVu4u06XzRbQBI7xbYfXwHYhRLipPRZvlrEBGwOkjSFSQxdezi8FdphjsBlCyPrzzXXyPl1HVysGT5gjRLShPbPXyhsMAzO43wtZKWJvU983C+WMmAjenTdBlKMF4HmT/BZGSYmrhYaoLfFRp17Y+kAvEcIFQEMbI6JhPA9937xVMr6peWGbFwNm8UDDhOC7wDVsN9s2HiZjPghY2HY6KHs2tj5rk0wjgXbwW59SVE1hYxzZ+EtY6NgQQx1oOiZScqaVBKA3ti+Z/gvOySDLe6AJ3LtUunj+/EoXbkELkLNJjqiMYjdf3+A9Z0Iig3ffXPo1PszbInvhAtCmTDVXSTep+RBfr4r1YVpL1ggdqT5dDKpuA3wGOpGos3jxPm4DSxtak1MoM3Qb6zmnVJMUorHolJ0m+malit5mmliBnwCdL8NsPrroAguam/u0I+A23uR5I1EDQ7NTRdIXFUjk799yuI9tYbn5oTTQSrStpsbgRv7tT+05TPN1p2Me8SNBkyvjDPEahWMp260BKbvXHc8tlDeTGC/w9V07iPTMNLHeFMLGT4jJFF5q6Uy+HqHG9V+wRQ5uan40AY4mXkqLsipvtNju9L09RVh0Uc/RKk13W5jWmDtoCdqUqdS6R3nwL/mV+fw51B/GDWgtLByvekTQoabLNCUVE3+g0OwhF2eat4ky/B/Qrz1G8TGQd/0d29GohXlNzZdRlFY9cfYuNTDHisLHxokDuAC0GVPzNssr+BhFb7YseAob+P45Dcq9aAWklDol2NH6QKwLtRfWrscgOMTU8GROqvgBbQB+tyqYtEUjQaXkDIlfcfDQ0UtQwCDtNd551PwN51qUushMrbrDVs6bSUvzuHT2uIhotd1uDlYUcxnRlfvj8OrTqaKUkeFyXuKp7ELZlQz4rtF1QM9KKeOqf+qGhSuDFokmcKvwl7+CLesS5TvLkuEytA2BorGlervSkdGdh7MK3uhbtSLMANkwJGxLVm0XpSn2SAt2NAq/10JsbBhRvntLI/lSahFxYfTM3YJraSlS6SOfeGmwiNAXLkQAj3g03MPhzIZXCSmjcoYw8A4P+WTuJqTkbpIZzUXXLUWrbyRNU8O1l3pRHueB1/YiHPUwhmwH3RV7AgmdXo5JW3lN8MC+cfLjFbTDHSqlu8dJJNzRAeV74xEsg7TpX0UMd2IT3mjPqxIi/QbHnHdAUgyBShgHv4Kx/0u0ARzmB0mJIGwZgtD87ApRA/106IG9snv8at/w/hND2zYPkAcZrYpTPHsphH0allbxvHfitJDwThgR3TVykDh4CKdCoUWXTFsUEq6Jtg/d6BuDjX141Sqpf9kOcyjsOfwZ57gSTzvkPzZMlOICUMtUuXSpCz5fIvRoPLWAaQCSYNjJtDvJvGgyL9mRrQP725MM7bnU0SYvV3rOPOGp2W+X6I1CzxA8GFwNH8W2JbB6XIlwv+vg2fEBwlcNhIzvCM+ubRAlxRAh0sWy8JPAESKKEm/iBFvyW5ksXveN1qcHNtlX4KQz6LisqntGpQvPxtyO68P7MNze44zRTMhgRLqMSs0bGwv/Vy5pnyC9SqDJEj6PcvlRrv6OAvQ9FeB7aL6SfKT7LBcWsX86P/oN06jUzNHia7QSVYeTy5Z5Ea91g9Q7wrY7806Xc4g+QXTheyKnJLElwIlnBZkpmwi3SZSX3eORbJch3dqGlqKGqd73C5jchhEelgLSBp5PWDeorKg7NUriUIsQ8EtXTBhGXIII/oPOjwSS5dQiJ1hyCFjK36V8lpGAP8CgBgo7ADuG2hgIwzZCr2vjV5w2YnqPEJ/1639gtx/9T1m4JdsSdfJapktOKvaGZmNC5jix9swVGcu/NFtfeNnzD4el+9Gusjhllv33IkTIGmhuuMPut62bXwxo3p4zIh/cBZftoQS0Y3mhPXStHXeI53njoWkOTakgtHG0DCfFJT2PanGDfBH7dE+tOE/TQvshrXKEGQBqFrXXX4HJv6kUjeTdNahijpg1yzERRU1NlDt3unDk81gEvT64wsnQKLhS70Z57krZ7URmU5vRsUh0v/y40SH5tsB2tA7CL0KhI/q/PzsWuWnkkPCgYYLam0NfuY+D9MWimBcMwAgGFut39IZw7eYZFpnVBP8xoJ+vcMizxjc0MuCBYdVVHPOcOaxoeW2HhAYFqeaETJnoO90Ukzkc2nL3uORP7663d846+RxZVZDjnhYxU0SLicGYY65OAxCL0LUPhleuoOX0wOfxsTbWGVqcD+/9JVauWVFJ+p+iYSiHOy6ICsYOwWAI06f7HYa3OFASgwdH+CirbsfYdtefc3+h9CQK/I2vh497EsYkBks6QxfdYMnLaMKTHK2PSvcVP9hx42O1iv0eGdlDbTpATfo2ktT5aq6bHR4zYaBXnDE9fikn2R0S3wqkTunMQsSi8081ew+jx63Um8WsWG1dOEWcbuIKyCuUPTJTxTe1HTbzSg3DDD+FEqhoaA3Drd40Z5UM/E7U7TdCmGxpSHL8YEPr5L8Y8Q8BNY1pDjC17hjzWr1vHGIbjNg74s/yFJ4th6ePuG1W3RTtIJrDjBlnzoaLiEQLQ6WOmyjZdw0YN8xx9k47J6KjhHvpZrdTAw5lpmBqjSmptOSc+kaFUVNBUOApWvSHOF7k07CkAdPj5MAbfHFYmr9Gznl8kihp6Gxk6Gj6q9fN9XIOtXpNVaeNbWRqRtjJcU2ZZ5rnFi0WrJNdomeKCv/BTuw7OyIFc9GHeId/shrUoI9x9mJE+yxTnGfMd+XlzKEPVd/fEH7k83W4uUamm5NoeeqApx9Y5RRJn7r98s1XuqNd0kmRnu5HM7h4eaqTaxks5wHFWhgbG5vmRINky1/JqLScAnRvakvHzMXoIouvBVzzDGulo+rPYSlwOwmQwdfbaag+oUm9l+XJuJoz5a6TV7NviTzzzS9cXtSawr5BvEUJ+dgQTD2G4Pf578tOVWdkUcPcIFNsHRt5n45kjMPw2gpPbiFuZCbUj/staer8LCi/xzkR4T6bnzuVIu5ZxDZE+LCW5ra2IEOBm8T+ZVVxANO/mn65evlMeD2ZCJ/OQwtw0ZhqbkEfHmQi2zPNVXa8UfyJj0omNPegBYjRMZf77qJmvBqU5xf1s8eKlazSXM8CwRFe6I8M5Zy8+KRZiApajt3sG0/mLf7Ih7HzR4r/1qybwtKcT2IqLYtDyAzGZydyNshj2hCUkWkbuSaGbXJ9f83580j8gx/6sLKpc89PEcd55uUUuqkLtzFQqkZWmniFe6RTULuxJLad3yzOcfy7htUcFlEdt5ip4mz+JjCAArqbrqovWoCLZ35tuPk3m8Rd2dxU519T1IRpjChrGcR1n5CQc0M6zjOf1NjiMinvcvM/L5znaPf++nPMdLGLu6SYG9Gdxf1+9HcJ1JIw5x8m4/Y29u+wR9KE4yt/vaBA5rK4fp2mwQn+wmRmEX31Z/X9nrlW+sjQzUw7lnzUgvosmfckGftteRkDSseM1+zDGjVr4b3KJYbTUvQSjvumJYkxsPPhMaLyXAJYufxzJ3Tf/VBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFA4i/8BfTebPWHK/zwAAAAASUVORK5CYII=
+    backgroundColor: '#121212'
+  description: |
+    This is an **example** API to demonstrate features of the OpenAPI specification.
+
+    # Introduction
+
+    This API definition is intended to to be a good starting point for
+    describing your API in 
+
+    [OpenAPI/Swagger
+    format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md).
+
+    It also demonstrates features of the
+    [create-openapi-repo](https://github.com/Redocly/create-openapi-repo) tool
+    and 
+
+    the [Redoc](https://github.com/Redocly/Redoc) documentation engine. Beyond
+    the standard OpenAPI syntax, we use a few 
+
+    [vendor
+    extensions](https://github.com/Redocly/Redoc/blob/master/docs/redoc-vendor-extensions.md).
+
+
+    # OpenAPI Specification
+
+    The goal of The OpenAPI Specification is to define a standard,
+    language-agnostic interface to REST APIs which
+
+    allows both humans and computers to discover and understand the capabilities
+    of the service without access to source
+
+    code, documentation, or through network traffic inspection. When properly
+    defined via OpenAPI, a consumer can 
+
+    understand and interact with the remote service with a minimal amount of
+    implementation logic. Similar to what
+
+    interfaces have done for lower-level programming, OpenAPI removes the
+    guesswork in calling the service.
+tags:
+  - name: Echo
+    description: Example echo operations.
+servers:
+  - url: https://{tenant}/api/v1
+    variables:
+      tenant:
+        default: www
+        description: Your tenant id
+  - url: https://example.com/api/v1
+paths:
+  /echo:
+    post:
+      tags:
+        - Echo
+      summary: Echo test
+      description: Receive the exact message you've sent
+      operationId: echo
+      security:
+        - api_key: []
+        - basic_auth: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              $ref: '#/components/headers/ExpiresAfter'
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                response:
+                  value: Hello world!
+            application/xml:
+              schema:
+                type: string
+            text/csv:
+              schema:
+                type: string
+        '400':
+          description: Unauthorized
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+              example: Hello world!
+          application/xml:
+            schema:
+              type: string
+              example: Hello world!
+        description: Echo payload
+        required: true
+      x-codeSamples:
+        - lang: C#
+          source: |
+            API.v1.Echo echo = new API.v1.Echo();
+            echo.message = "Hello World!");
+            EchoResponse response = echo.post();
+            if (response.statusCode == HttpStatusCode.Created)
+            {
+              // Success
+            }
+            else
+            {
+              // Something wrong -- check response for errors
+              Console.WriteLine(response.getRawResponse());
+            }
+        - lang: PHP
+          source: |
+            $form = new \API\Entities\Echo();
+            $form->setMessage("Hello World!");
+            try {
+                $pet = $client->echo()->post($form);
+            } catch (UnprocessableEntityException $e) {
+                var_dump($e->getErrors());
+            }
+components:
+  securitySchemes:
+    main_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://example.com/api/oauth/dialog
+          scopes:
+            read:users: read users info
+            write:users: modify or remove users
+    api_key:
+      type: apiKey
+      in: header
+      name: api_key
+    basic_auth:
+      type: http
+      scheme: basic
+  headers:
+    ExpiresAfter:
+      description: date in UTC when token expires
+      schema:
+        type: string
+        format: date-time
